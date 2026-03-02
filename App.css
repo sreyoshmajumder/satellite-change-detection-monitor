@@ -1,0 +1,33 @@
+.debug-status { text-align: center; opacity: 0.7; font-size: 0.9rem; margin-bottom: 10px; }
+.debug-status a { color: #00d4ff; }
+.error button { background: #ff6b6b; color: white; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; margin-left: 10px; }
+/* ... keep all previous CSS ... */
+
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%); color: #e0e0e0; }
+
+.App { max-width: 1400px; margin: 0 auto; padding: 20px; }
+h1 { text-align: center; font-size: clamp(2.5rem, 6vw, 4.5rem); background: linear-gradient(45deg, #00d4ff, #ff6b9d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 20px 0; animation: glow 2s infinite alternate; }
+@keyframes glow { from { filter: drop-shadow(0 0 10px #00d4ff); } to { filter: drop-shadow(0 0 20px #ff6b9d); } }
+
+.search-container { max-width: 500px; margin: 0 auto 20px; position: relative; }
+.search-icon { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); color: #00d4ff; font-size: 20px; }
+input[type="text"] { width: 100%; padding: 16px 20px 16px 60px; border-radius: 50px; background: rgba(255,255,255,0.1); border: none; color: #fff; backdrop-filter: blur(20px); }
+
+.satellite-map { border-radius: 24px !important; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+
+.info-panel { max-width: 1200px; margin: 30px auto; padding: 30px; background: rgba(255,255,255,0.05); backdrop-filter: blur(25px); border-radius: 24px; border: 1px solid rgba(255,255,255,0.1); }
+.location-header { font-size: 1.8rem; color: #00d4ff; margin-bottom: 20px; }
+.weather-card { background: rgba(0,212,255,0.1); padding: 20px; border-radius: 16px; margin: 10px 0; border-left: 4px solid #00d4ff; }
+.news-list h3 { color: #ff6b9d; margin-bottom: 15px; }
+.news-item { background: rgba(255,255,255,0.05); padding: 15px; margin: 10px 0; border-radius: 12px; border-left: 4px solid #ff6b9d; }
+.news-item a { color: #fff; text-decoration: none; }
+.alert { background: linear-gradient(90deg, #ff6b6b, #ff8e8e); color: white; padding: 20px; border-radius: 16px; text-align: center; font-weight: 600; animation: pulse 2s infinite; margin: 15px 0; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+.loading, .error { text-align: center; padding: 40px; font-size: 1.2rem; }
+.loading { color: #00d4ff; }
+.error { color: #ff6b6b; }
+.error button { background: #00d4ff; color: white; border: none; padding: 10px 20px; border-radius: 20px; cursor: pointer; margin-left: 10px; }
+
+@media (max-width: 768px) { .satellite-map { height: 50vh !important; } .info-panel { margin: 15px; padding: 20px; } }
