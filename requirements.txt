@@ -1,0 +1,16 @@
+# Stable, conflict-free versions (March 2026)
+Flask==2.3.3
+Flask-CORS==4.0.0
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Image/ML (CPU only - no conflicts)
+Pillow==10.2.0
+numpy==1.26.4
+opencv-python-headless==4.9.0.80
+torch==2.1.2+cpu
+torchvision==0.16.2+cpu
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+# Production
+gunicorn==21.2.0
